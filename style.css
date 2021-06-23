@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: #070c24;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 0.5fr 0.4fr;
+  background: #080f37 0% 0% no-repeat padding-box;
+  height: 120px;
+  width: 90%;
+  border-radius: 75px;
+  margin: auto;
+  margin-top: 60px;
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.links {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  letter-spacing: 0px;
+  align-items: center;
+}
+
+.home_nav {
+  color: #05be43 !important;
+  font-weight: 700 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.home_nav:active {
+  color: #05be43;
+  font-weight: 700;
+}
+
+.active_container {
+  border-radius: 60px;
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  position: absolute;
+  margin-left: 0.9vw;
+  margin-top: 40px;
+}
+
+.active {
+  width: 0.6vw;
+  height: 0.6vw;
+  background: #05be43;
+  border-radius: 60px;
+}
+
+.contact_nav:not(:hover) {
+  background: linear-gradient(#0458ff, #05be43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  width: 9vw;
+  height: 2.5vw;
+  transition: 2s;
+}
+
+.contact_nav:hover {
+  background: linear-gradient(#0458ff, #05be43);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 9vw;
+  height: 2.5vw;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.contact_text {
+  color: #fff;
+}
+
+.left_side {
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-image: url("img/left_img.jpg");
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_phone {
+  padding-left: 0.5vw;
+}
+
+.right_side {
+  top: 0px;
+  height: 100vh;
+  background-size: 50%;
+  right: 0px;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.half_circle {
+  width: 300px;
+  height: 300px;
+  background: #070c24;
+  border-radius: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner_circle:not(:hover) {
+  border-radius: 120px;
+  width: 50%;
+  height: 50%;
+  background: linear-gradient(#0458ff, #05be43);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 2s;
+}
+
+.inner_circle:hover {
+  border-radius: 45px;
+  width: 50%;
+  height: 50%;
+  background: linear-gradient(#0458ff, #05be43);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.play_arrow {
+  font-size: 2vw;
+  color: #fff;
+  padding-left: 0.5vw;
+}
+
+.header_info {
+  display: grid;
+  margin: 45vh 60vw;
+  position: absolute;
+  grid-template-rows: 0.1fr 0.8fr 0.1fr;
+  justify-content: right;
+}
+
+.title {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  justify-content: center;
+  margin-left: 0;
+}
+
+.title_color {
+  color: #05be43;
+}
+
+.profession {
+  display: grid;
+  color: #05be43;
+  margin: 50px 20px 0px 0px;
+  grid-template-rows: 1fr 1fr;
+  min-width: 100%;
+}
+
+.profession_line {
+  background: #05be43;
+  height: 5px;
+  width: 75px;
+  border-radius: 60px;
+}
+
+.about_info {
+  margin-right: -15vw;
+  color: #fff;
+}
+
+.learn_btn:not(:hover) {
+  border: 1px solid #fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  width: 9vw;
+  height: 2.5vw;
+  transition: 2s;
+  margin-top: 40px;
+}
+
+.learn_btn:hover {
+  background: #fff !important;
+  color: #070c24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 9vw;
+  height: 2.5vw;
+  transition: 0.1s;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.learn_btn_icon {
+  margin-left: 0.5vw;
+  color: #05be43;
+}
+
+.all_links {
+  color: #fff;
+}
+
+.all_links:hover {
+  color: #05be43;
+  cursor: pointer;
+}
+
+.all_links:active {
+  color: #05be43;
+  font-weight: 700;
+}
